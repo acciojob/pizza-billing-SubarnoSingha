@@ -46,7 +46,10 @@ public class Pizza {
     public void addExtraCheese()
     {
         // your code goes here
-        price=price+extraCheesePrice;
+        if(isCheeseAdded==false) {
+            price = price + extraCheesePrice;
+            isCheeseAdded = true;
+        }
     }
 
     public void addExtraToppings(){
@@ -71,7 +74,7 @@ public class Pizza {
         if(isBillGenerated==false)
         {
             isBillGenerated=true;
-            if(isCheeseAdded==false)
+            if(isCheeseAdded==true)
             {
                 bill=bill+"Extra Cheese Added : "+extraCheesePrice+ "\n";
             }
@@ -81,7 +84,7 @@ public class Pizza {
             }
             if(isTakeaway==true)
             {
-                bill=bill+"Paper Bag added : "+TakeAwayPrice+ "\n";
+                bill=bill+"Paperbag added : "+TakeAwayPrice+ "\n";
             }
             bill=bill+"Total Price: "+price;
         }
