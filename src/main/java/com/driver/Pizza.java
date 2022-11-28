@@ -74,6 +74,7 @@ public class Pizza {
         if(isBillGenerated==false)
         {
             isBillGenerated=true;
+
             if(isCheeseAdded==true)
             {
                 bill=bill+"Extra Cheese Added : "+extraCheesePrice+ "\n";
