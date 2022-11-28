@@ -20,7 +20,7 @@ public class Pizza {
         isToppingsAdded=false;
         isTakeaway=false;
         isBillGenerated=false;
-
+        extraCheesePrice=80;
        TakeAwayPrice=20;
         if(isVeg==true)
         {
@@ -32,7 +32,7 @@ public class Pizza {
             price=400;
             ExtraToppingsPrice=120;
         }
-        bill="Base Price of the pizza"+price+"\n";
+        bill="Base Price of the pizza : "+price+"\n";
     }
 
     public int getPrice(){
