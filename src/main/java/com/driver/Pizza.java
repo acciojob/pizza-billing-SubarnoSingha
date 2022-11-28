@@ -35,7 +35,7 @@ public class Pizza {
             price=400;
             ExtraToppingsPrice=120;
         }
-        bill="Base Price of the pizza : "+price+"\n";
+        bill="Base Price Of The Pizza: "+price+ "\n";
     }
 
     public int getPrice(){
@@ -77,17 +77,17 @@ public class Pizza {
 
             if(isCheeseAdded==true)
             {
-                bill=bill+"Extra Cheese Added : "+extraCheesePrice+ "\n";
+                bill=bill+"Extra Cheese Added: "+extraCheesePrice+ "\n";
             }
             if(isToppingsAdded==true)
             {
-                bill=bill+"Extra Topping Added : "+ExtraToppingsPrice+ "\n";
+                bill=bill+"Extra Toppings Added: "+ExtraToppingsPrice+ "\n";
             }
             if(isTakeaway==true)
             {
-                bill=bill+"Paperbag added : "+TakeAwayPrice+ "\n";
+                bill=bill+"Paperbag Added: "+TakeAwayPrice+ "\n";
             }
-            bill=bill+"Total Price: "+price;
+            bill=bill+"Total Price: "+price+ "\n";
         }
         return this.bill;
     }
